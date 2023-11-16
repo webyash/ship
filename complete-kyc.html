@@ -1,0 +1,1790 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Seller KYC | SHIPEASE TECHNOLOGIES PRIVATE LIMITED</title>
+
+    <link rel="icon" href="https://www.shipease.in/public/assets/admin/images/20201210182316FAV.png">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://www.shipease.in/public/assets/seller/css/bootstrap.min.css" type="text/css">
+<!-- Style CSS -->
+<link rel="stylesheet" href="https://www.shipease.in/public/assets/seller/css/style.css" type="text/css">
+
+<link href="https://www.shipease.in/public/assets/seller/css/materialdesignicons.min.css" rel="stylesheet">
+<link href="https://www.shipease.in/public/assets/seller/css/notify.css" rel="stylesheet">
+<link href="https://www.shipease.in/public/assets/seller/css/prettify.css" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/dist/bootstrap-switch-button.min.js"></script>
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<style>
+ body{
+            zoom : 80%;
+        }
+    .modal-backdrop {
+  width: 100% !important;
+  height: 100% !important;
+}
+.welcomebtn{
+    box-shadow: 4px 4px 1px #096336;
+    border: 0 !important;
+    border-radius: 0px !important;
+}
+.btn-outline-primary{
+    color: #073D59 !important;
+    border-color: #073D59 !important;
+}
+.btn-outline-primary:hover{
+    color: #fff !important;
+    background-color: #073D59 !important;
+    border-color: #073D59 !important;
+}
+ .myterm{
+     border-color: red;
+     border-width: 1px;
+     border-style: solid;
+ }
+
+
+.bell{
+  -webkit-animation: ring 4s .7s ease-in-out infinite;
+  -webkit-transform-origin: 50% 4px;
+  -moz-animation: ring 4s .7s ease-in-out infinite;
+  -moz-transform-origin: 50% 4px;
+  animation: ring 4s .7s ease-in-out infinite;
+  transform-origin: 50% 4px;
+}
+
+@-webkit-keyframes ring {
+  0% { -webkit-transform: rotateZ(0); }
+  1% { -webkit-transform: rotateZ(30deg); }
+  3% { -webkit-transform: rotateZ(-28deg); }
+  5% { -webkit-transform: rotateZ(34deg); }
+  7% { -webkit-transform: rotateZ(-32deg); }
+  9% { -webkit-transform: rotateZ(30deg); }
+  11% { -webkit-transform: rotateZ(-28deg); }
+  13% { -webkit-transform: rotateZ(26deg); }
+  15% { -webkit-transform: rotateZ(-24deg); }
+  17% { -webkit-transform: rotateZ(22deg); }
+  19% { -webkit-transform: rotateZ(-20deg); }
+  21% { -webkit-transform: rotateZ(18deg); }
+  23% { -webkit-transform: rotateZ(-16deg); }
+  25% { -webkit-transform: rotateZ(14deg); }
+  27% { -webkit-transform: rotateZ(-12deg); }
+  29% { -webkit-transform: rotateZ(10deg); }
+  31% { -webkit-transform: rotateZ(-8deg); }
+  33% { -webkit-transform: rotateZ(6deg); }
+  35% { -webkit-transform: rotateZ(-4deg); }
+  37% { -webkit-transform: rotateZ(2deg); }
+  39% { -webkit-transform: rotateZ(-1deg); }
+  41% { -webkit-transform: rotateZ(1deg); }
+
+  43% { -webkit-transform: rotateZ(0); }
+  100% { -webkit-transform: rotateZ(0); }
+}
+
+@-moz-keyframes ring {
+  0% { -moz-transform: rotate(0); }
+  1% { -moz-transform: rotate(30deg); }
+  3% { -moz-transform: rotate(-28deg); }
+  5% { -moz-transform: rotate(34deg); }
+  7% { -moz-transform: rotate(-32deg); }
+  9% { -moz-transform: rotate(30deg); }
+  11% { -moz-transform: rotate(-28deg); }
+  13% { -moz-transform: rotate(26deg); }
+  15% { -moz-transform: rotate(-24deg); }
+  17% { -moz-transform: rotate(22deg); }
+  19% { -moz-transform: rotate(-20deg); }
+  21% { -moz-transform: rotate(18deg); }
+  23% { -moz-transform: rotate(-16deg); }
+  25% { -moz-transform: rotate(14deg); }
+  27% { -moz-transform: rotate(-12deg); }
+  29% { -moz-transform: rotate(10deg); }
+  31% { -moz-transform: rotate(-8deg); }
+  33% { -moz-transform: rotate(6deg); }
+  35% { -moz-transform: rotate(-4deg); }
+  37% { -moz-transform: rotate(2deg); }
+  39% { -moz-transform: rotate(-1deg); }
+  41% { -moz-transform: rotate(1deg); }
+
+  43% { -moz-transform: rotate(0); }
+  100% { -moz-transform: rotate(0); }
+}
+
+@keyframes  ring {
+  0% { transform: rotate(0); }
+  1% { transform: rotate(30deg); }
+  3% { transform: rotate(-28deg); }
+  5% { transform: rotate(34deg); }
+  7% { transform: rotate(-32deg); }
+  9% { transform: rotate(30deg); }
+  11% { transform: rotate(-28deg); }
+  13% { transform: rotate(26deg); }
+  15% { transform: rotate(-24deg); }
+  17% { transform: rotate(22deg); }
+  19% { transform: rotate(-20deg); }
+  21% { transform: rotate(18deg); }
+  23% { transform: rotate(-16deg); }
+  25% { transform: rotate(14deg); }
+  27% { transform: rotate(-12deg); }
+  29% { transform: rotate(10deg); }
+  31% { transform: rotate(-8deg); }
+  33% { transform: rotate(6deg); }
+  35% { transform: rotate(-4deg); }
+  37% { transform: rotate(2deg); }
+  39% { transform: rotate(-1deg); }
+  41% { transform: rotate(1deg); }
+
+  43% { transform: rotate(0); }
+  100% { transform: rotate(0); }
+}
+</style>
+
+    <style type="text/css">
+        .invalid{
+            border-color: crimson;
+            color: crimson;
+        }
+        .invalid:hover{
+            border-color: crimson;
+            color: crimson;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container-fluid user-dashboard">
+    <header class="header bg-white d-flex align-items-center px-lg-3 px-2">
+    <div class="mr-auto navbar-brand text-left mb-0 d-none d-lg-block">
+        <a href="https://www.shipease.in/seller-dashboard" class="d-block"><img src="https://www.shipease.in/public/assets/admin/images/20201125223903LOGO.png" height="30" alt=""></a>
+    </div>
+    <div class="mr-auto text-right d-lg-none d-flex align-items-center">
+        <nav class="navbar navbar-light py-0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <div class="navbar-brand mx-auto w-100 text-center m-0">
+            <a href="https://www.shipease.in/seller-dashboard" class="d-block"><img src="https://www.shipease.in/public/assets/admin/images/20201125223903LOGO.png" height="30" alt=""></a>
+        </div>
+        <div class="collapse user-mobile-navbar" id="navbarToggleExternalContent">
+            <div class="text-left px-3 side-menu">
+                <ul class="mb-0">
+                    <li>
+    <a href="https://www.shipease.in/seller-dashboard" class="">
+        <i class="mdi mdi-monitor-dashboard"></i> <span>Dashboard</span>
+    </a>
+</li>
+<li>
+    <a href="https://www.shipease.in/my-orders?tab=processing" class="">
+        <i class="mdi mdi-file-replace-outline"></i><span> Orders</span>
+    </a>
+    <ul class="sub-menu">
+        <li>
+            <a href="https://www.shipease.in/my-orders?tab=new_order">
+            <i class="far fa-plus"></i><span> Create Order</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-orders?tab=all_orders">
+                <i class="far fa-bring-forward fa-sm"></i><span> All Orders</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-orders?tab=unprocessable">
+                <i class="far fa-exclamation-circle fa-sm"></i><span> Unprocessable</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-orders?tab=processing">
+                <i class="far fa-cogs"></i><span> Processing</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-orders?tab=ready_ship">
+                <i class="far fa-dolly"></i><span> Ready to Ship</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-orders?tab=manifest">
+                <i class="far fa-file-invoice"></i><span> Manifest</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-orders?tab=returns">
+                <i class="far fa-undo-alt"></i><span> Returns</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<li>
+    <a href="#" class="">
+        <i class="mdi mdi-clipboard-arrow-down-outline"></i><span> More On Orders</span>
+    </a>
+    <ul class="sub-menu">
+        <li>
+            <a href="https://www.shipease.in/quick-order" class="">
+                <i class="far fa-flash"></i> <span>Quick Order</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/re-assign" class="">
+                <i class="mdi mdi-file-replace-outline"></i><span> Reassign Orders</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/merge-orders" class="">
+                <i class="fa fa-code-merge"></i><span> Merge Orders</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/split-orders" class="">
+                <i class="fas fa-page-break"></i><span> Split Orders</span>
+            </a>
+        </li>
+                <li>
+            <a href="https://www.shipease.in/my-orders?tab=add_reverse_order">
+            <i class="far fa-undo-alt"></i> <span>Reverse Order</span>
+            </a>
+        </li>
+            </ul>
+</li>
+<li>
+    <a href="https://www.shipease.in/ndr-orders" class="">
+        <i class="mdi mdi-table-split-cell"></i> <span>Shipments</span>
+    </a>
+    <ul class="sub-menu">
+        <li>
+            <a href="https://www.shipease.in/ndr-orders?tab=ndr">
+                <i class="far fa-exclamation-square"></i><span>NDR</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/ndr-orders?tab=ndr_delivered">
+                <i class="far fa-truck-loading"></i><span>NDR Delivered</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/ndr-orders?tab=rto">
+                <i class="far fa-undo-alt"></i> <span>RTO</span>
+            </a>
+        </li>
+    </ul>
+</li>
+
+<li>
+    <a href="https://www.shipease.in/my-channels" class="">
+        <i class="mdi mdi-link"></i><span>Channels</span>
+    </a>
+</li>
+<li>
+    <a href="https://www.shipease.in/oms" class="">
+        <i class="mdi mdi-database-edit"></i><span>OMS</span>
+    </a>
+    <ul class="sub-menu">
+        <li>
+            <a href="https://www.shipease.in/oms" class="">
+                <i class="mdi mdi-database-edit"></i><span>New OMS</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-oms" class="">
+                <i class="far fa-warehouse-alt"></i><span>My OMS</span>
+            </a>
+        </li>
+    </ul>
+</li>
+    <li>
+        <a href="https://www.shipease.in/billing" class="">
+            <i class="mdi mdi-file-cog-outline"></i> <span>Billing</span>
+        </a>
+        <ul class="sub-menu">
+            <li>
+                <a href="https://www.shipease.in/billing?tab=charges">
+                    <i class="far fa-cogs"></i> <span>Shipping Charges</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.shipease.in/billing?tab=remittance">
+                    <i class="far fa-hourglass-start"></i> <span>Remittance Log</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.shipease.in/billing?tab=recharge">
+                    <i class="far fa-battery-bolt"></i> <span>Recharge Log</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.shipease.in/billing?tab=invoice">
+                    <i class="far fa-file-alt"></i> <span>Invoices</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.shipease.in/billing?tab=passbook">
+                    <i class="far fa-ticket"></i> <span>Passbook</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.shipease.in/billing?tab=credit_notes">
+                    <i class="far fa-receipt"></i> <span>Credit Notes</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+    <a href="https://www.shipease.in/weight?tab=reconciliation" class="">
+        <i class="far fa-balance-scale-right"></i><span>Weight Reco.</span>
+    </a>
+    <ul class="sub-menu">
+        <li>
+            <a href="https://www.shipease.in/weight?tab=reconciliation">
+                <i class="far fa-balance-scale-right"></i> <span>Reconciliations</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/weight?tab=on-hold_reconcilation">
+                <i class="far fa-pause"></i> <span>On-Hold</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/weight?tab=settle">
+                <i class="far fa-handshake-o"></i> <span>Settled</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<li>
+    <a href="https://www.shipease.in/seller-settings" class="">
+        <i class="mdi mdi-account-arrow-left-outline"></i><span>Customer</span>
+    </a>
+    <ul class="sub-menu">
+        <li>
+            <a href="https://www.shipease.in/seller-settings?tab=basic_info">
+            <i class="far fa-info-square"></i><span> Basic Information</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/seller-settings?tab=account_info">
+            <i class="far fa-user-circle"></i><span> Account Information</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/seller-settings?tab=kyc_info">
+            <i class="far fa-sitemap"></i><span> KYC Information</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/seller-settings?tab=agreement">
+            <i class="far fa-handshake-alt"></i><span> Agreement</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-employees">
+                <i class="far fa-user"></i><span>Employees</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<!-- <li>
+    <a href="#collapseExample" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <i class="mdi mdi-brightness-7"></i><span>Settings</span>
+    </a>
+    <i class="mdi mdi-chevron-down"></i>
+    <ul class="sub-menu collapse" id="collapseExample">
+        <li>
+            <a href="https://www.shipease.in/seller-settings_partner">
+            <i class="far fa-box-open"></i><span>Courier Preferences</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-warehouse">
+                <i class="far fa-warehouse-alt"></i><span>Warehouses</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-rules">
+                <i class="far fa-pencil-ruler"></i><span>Rules</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-sku">
+                <i class="far fa-clone"></i><span>SKU</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/shipping_rates">
+                <i class="mdi mdi-cash-multiple"></i> <span>Shipping Rates</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/seller-rate-calculator">
+                <i class="mdi mdi-calculator-variant"></i> <span>Rate Calculator</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/seller_api_key">
+                <i class="mdi mdi-xml"></i> <span>Rest APIs</span>
+            </a>
+        </li>
+    </ul>
+</li> -->
+
+
+<li>
+    <a href="https://www.shipease.in/seller-settings_partner" class="">
+        <i class="fas fa-tools" style="font-size: 18px;"></i><span>Tools</span>
+    </a>
+    <ul class="sub-menu">
+        <li>
+            <a href="https://www.shipease.in/seller-settings_partner" class="">
+            <i class="far fa-box-open"></i><span>Courier Preferences</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-warehouse" class="">
+                <i class="far fa-warehouse-alt"></i><span>Warehouses</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-rules" class="">
+                <i class="far fa-pencil-ruler"></i><span>Rules</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-sku" class="">
+                <i class="far fa-clone"></i><span>SKU</span>
+            </a>
+        </li>
+                <li>
+            <a href="https://www.shipease.in/shipping_rates" class="">
+                <i class="mdi mdi-cash-multiple"></i> <span>Shipping Rates</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/seller-rate-calculator" class="">
+            <i class="far fa-calculator"></i> <span>Rate Calculator</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/customise-label" class="">
+                <i class="far fa-clone"></i> <span>Customize Label</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/seller_api_key" class="">
+                <i class="far fa-code"></i> <span>Rest APIs</span>
+            </a>
+        </li>
+
+                <!-- <li>
+            <a href="https://www.shipease.in/serviceable_pincode" class="">
+                <i class="far fa-map-marker-alt"></i> <span>Serviceable Pincode</span>
+            </a>
+        </li> -->
+    </ul>
+</li>
+<li>
+    <a href="https://www.shipease.in/mis_report" class="">
+        <i class="mdi mdi-mailbox-open-up-outline"></i> <span>MIS</span>
+        <ul class="sub-menu">
+            <li>
+                <a href="https://www.shipease.in/mis_report" class="">
+                    <i class="far fa-box-open"></i><span>Reports</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.shipease.in/seller/report-status" class="">
+                    <i class="far fa-download"></i><span>Downloads</span>
+                </a>
+            </li>
+            <!--<li>-->
+            <!--    <a href="https://www.shipease.in/pickup-reports" class="">-->
+            <!--        <i class="far fa-download"></i><span>Pickups</span>-->
+            <!--    </a>-->
+            <!--</li>-->
+        </ul>
+    </a>
+</li>
+<li>
+    <a href="https://www.shipease.in/customer_support" class="">
+        <i class="mdi mdi-face-agent"></i> <span>Customer Support</span>
+    </a>
+</li>
+                </ul>
+                <div class="w-100 text-right py-3 d-flex align-items-center justify-content-between">
+                    <a href="#" class="btn btn-outline-success header-btn" data-toggle="modal" data-target="#exampleModal"><i class="mdi mdi-power-plug-outline"></i> Recharge</a>
+                    <div class="dropdown user-dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="user-photo"><img src="https://www.shipease.in/public/assets/seller/images/user-photo.svg" alt=""></span>
+                            <span class="user-name">Rajeev yash </span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="https://www.shipease.in/seller-profile">Profile</a>
+                            <a class="dropdown-item" href="https://www.shipease.in/seller-settings">Settings</a>
+                            <a class="dropdown-item" href="https://www.shipease.in/seller-logout">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ml-auto text-right d-none d-lg-block" id="header_top">
+                <!-- <input type="text" name="awb_number" class="btn btn-outline-success header-btn AWBNumberBtn" placeholder="Search AWB Number Here"> -->
+        <a class="btn btn-primary d-inline header-btn mx-o welcomebtn">Welcome &nbsp;Rajeev yash (SE-118944)</a>
+        <a class="btn btn-outline-success d-inline header-btn mx-o FetchOrder" data-placement="top" data-toggle="tooltip" data-original-title="Fetch Channel Order" onclick="FetchChannelOrder()">
+        <i class="far fa-cloud-download-alt"></i>
+        <!-- <i class="far fa-file-export"></i> -->
+        </a>
+        <a class="btn btn-outline-success d-inline header-btn mx-o refreshbtn" data-placement="top" data-toggle="tooltip" data-original-title="Refresh" onclick="refreshRecharge()">
+            <i class="far fa-refresh"></i>
+        </a>
+        <a href="https://www.shipease.in/seller-profile" class="btn btn-outline-success d-inline header-btn mx-o" data-placement="top" data-toggle="tooltip" data-original-title="Profile">
+            <i class="far fa-user-alt"></i>
+        </a>
+        <a href="https://www.shipease.in/seller-change-password" class="btn btn-outline-success d-inline header-btn mx-o" data-placement="top" data-toggle="tooltip" data-original-title="Change Password">
+            <i class="far fa-key"></i>
+        </a>
+        <a href="#" class="btn btn-outline-danger d-inline header-btn" data-toggle="modal" data-target="#exampleModal" data-placement="top" data-original-title="Make a Recharge">
+        <span data-toggle="tooltip" data-placement="top" data-original-title="Wallet"><i class="far fa-wallet"></i> &nbsp;₹0</span>
+        </a>
+       
+        <a class="btn btn-outline-success d-inline header-btn" style="position: relative;" data-toggle="collapse" id="notificationButton" href="#NotificationModal" role="button" aria-expanded="false" aria-controls="NotificationModal">
+            <i class=" far fa-bell"  data-toggle="tooltip" data-placement="top" data-original-title="Notifications"></i>
+        </a>
+        <a href="https://www.shipease.in/seller-logout" class="btn btn-outline-success d-inline header-btn" data-toggle="tooltip" data-placement="top" data-original-title="Logout from System">
+            <i class="far fa-sign-out-alt"></i>
+        </a>
+        <div class="collapse filter-collapse ml-5 mt-2 text-left p-3" style="position: absolute;z-index: 1;right: 0;width: 300px;transform: translateX(-50%);background: #ffffff;padding: 15px;border: 1px solid #dee2e6;font-size: 12px;line-height: 18px;border-radius: 5px;margin-right:-125px;" id="NotificationModal">
+            <div class="row">
+                            <div class="col-md-12">
+                    <h6 class="mb-0">No New Notification</h6>
+                </div>
+                        </div>
+        </div>
+    </div>
+</header>
+
+<script>
+  //get dimensi data in modal
+
+        function refreshRecharge(){
+             $.ajax({
+                url: 'https://www.shipease.in/refresh_recharge',
+                success: function (response) {
+                    $.LoadingOverlay('hide');
+                    location.reload();
+                },
+                error: function (response) {
+                    $.LoadingOverlay('hide');
+                    $.notify(" Oops... Something went wrong!", {
+                        animationType: "scale",
+                        align: "right",
+                        type: "danger",
+                        icon: "close"
+                    });
+                }
+            });
+        }
+        
+        function FetchChannelOrder(){
+            showOverlay();
+            $.ajax({
+                url: 'https://www.shipease.in/fetch-all-orders',
+                success: function (response) {
+                    hideOverlay();
+                    location.reload();
+                },
+                error: function (response) {
+                    hideOverlay();
+                    $.notify(" Oops... Order Not Fetched!", {
+                        blur: 0.2,
+                        delay: 0,
+                        verticalAlign: "top",
+                        animationType: "scale",
+                        align: "right",
+                        type: "danger",
+                        icon: "close"
+                    });
+                }
+            });
+        }
+</script>
+
+    <aside class="sidebar border-right  d-none d-lg-block">
+    <div class="side-menu">
+        <ul>
+            <li>
+    <a href="https://www.shipease.in/seller-dashboard" class="">
+        <i class="mdi mdi-monitor-dashboard"></i> <span>Dashboard</span>
+    </a>
+</li>
+<li>
+    <a href="https://www.shipease.in/my-orders?tab=processing" class="">
+        <i class="mdi mdi-file-replace-outline"></i><span> Orders</span>
+    </a>
+    <ul class="sub-menu">
+        <li>
+            <a href="https://www.shipease.in/my-orders?tab=new_order">
+            <i class="far fa-plus"></i><span> Create Order</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-orders?tab=all_orders">
+                <i class="far fa-bring-forward fa-sm"></i><span> All Orders</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-orders?tab=unprocessable">
+                <i class="far fa-exclamation-circle fa-sm"></i><span> Unprocessable</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-orders?tab=processing">
+                <i class="far fa-cogs"></i><span> Processing</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-orders?tab=ready_ship">
+                <i class="far fa-dolly"></i><span> Ready to Ship</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-orders?tab=manifest">
+                <i class="far fa-file-invoice"></i><span> Manifest</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-orders?tab=returns">
+                <i class="far fa-undo-alt"></i><span> Returns</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<li>
+    <a href="#" class="">
+        <i class="mdi mdi-clipboard-arrow-down-outline"></i><span> More On Orders</span>
+    </a>
+    <ul class="sub-menu">
+        <li>
+            <a href="https://www.shipease.in/quick-order" class="">
+                <i class="far fa-flash"></i> <span>Quick Order</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/re-assign" class="">
+                <i class="mdi mdi-file-replace-outline"></i><span> Reassign Orders</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/merge-orders" class="">
+                <i class="fa fa-code-merge"></i><span> Merge Orders</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/split-orders" class="">
+                <i class="fas fa-page-break"></i><span> Split Orders</span>
+            </a>
+        </li>
+                <li>
+            <a href="https://www.shipease.in/my-orders?tab=add_reverse_order">
+            <i class="far fa-undo-alt"></i> <span>Reverse Order</span>
+            </a>
+        </li>
+            </ul>
+</li>
+<li>
+    <a href="https://www.shipease.in/ndr-orders" class="">
+        <i class="mdi mdi-table-split-cell"></i> <span>Shipments</span>
+    </a>
+    <ul class="sub-menu">
+        <li>
+            <a href="https://www.shipease.in/ndr-orders?tab=ndr">
+                <i class="far fa-exclamation-square"></i><span>NDR</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/ndr-orders?tab=ndr_delivered">
+                <i class="far fa-truck-loading"></i><span>NDR Delivered</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/ndr-orders?tab=rto">
+                <i class="far fa-undo-alt"></i> <span>RTO</span>
+            </a>
+        </li>
+    </ul>
+</li>
+
+<li>
+    <a href="https://www.shipease.in/my-channels" class="">
+        <i class="mdi mdi-link"></i><span>Channels</span>
+    </a>
+</li>
+<li>
+    <a href="https://www.shipease.in/oms" class="">
+        <i class="mdi mdi-database-edit"></i><span>OMS</span>
+    </a>
+    <ul class="sub-menu">
+        <li>
+            <a href="https://www.shipease.in/oms" class="">
+                <i class="mdi mdi-database-edit"></i><span>New OMS</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-oms" class="">
+                <i class="far fa-warehouse-alt"></i><span>My OMS</span>
+            </a>
+        </li>
+    </ul>
+</li>
+    <li>
+        <a href="https://www.shipease.in/billing" class="">
+            <i class="mdi mdi-file-cog-outline"></i> <span>Billing</span>
+        </a>
+        <ul class="sub-menu">
+            <li>
+                <a href="https://www.shipease.in/billing?tab=charges">
+                    <i class="far fa-cogs"></i> <span>Shipping Charges</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.shipease.in/billing?tab=remittance">
+                    <i class="far fa-hourglass-start"></i> <span>Remittance Log</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.shipease.in/billing?tab=recharge">
+                    <i class="far fa-battery-bolt"></i> <span>Recharge Log</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.shipease.in/billing?tab=invoice">
+                    <i class="far fa-file-alt"></i> <span>Invoices</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.shipease.in/billing?tab=passbook">
+                    <i class="far fa-ticket"></i> <span>Passbook</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.shipease.in/billing?tab=credit_notes">
+                    <i class="far fa-receipt"></i> <span>Credit Notes</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+    <a href="https://www.shipease.in/weight?tab=reconciliation" class="">
+        <i class="far fa-balance-scale-right"></i><span>Weight Reco.</span>
+    </a>
+    <ul class="sub-menu">
+        <li>
+            <a href="https://www.shipease.in/weight?tab=reconciliation">
+                <i class="far fa-balance-scale-right"></i> <span>Reconciliations</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/weight?tab=on-hold_reconcilation">
+                <i class="far fa-pause"></i> <span>On-Hold</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/weight?tab=settle">
+                <i class="far fa-handshake-o"></i> <span>Settled</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<li>
+    <a href="https://www.shipease.in/seller-settings" class="">
+        <i class="mdi mdi-account-arrow-left-outline"></i><span>Customer</span>
+    </a>
+    <ul class="sub-menu">
+        <li>
+            <a href="https://www.shipease.in/seller-settings?tab=basic_info">
+            <i class="far fa-info-square"></i><span> Basic Information</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/seller-settings?tab=account_info">
+            <i class="far fa-user-circle"></i><span> Account Information</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/seller-settings?tab=kyc_info">
+            <i class="far fa-sitemap"></i><span> KYC Information</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/seller-settings?tab=agreement">
+            <i class="far fa-handshake-alt"></i><span> Agreement</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-employees">
+                <i class="far fa-user"></i><span>Employees</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<!-- <li>
+    <a href="#collapseExample" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <i class="mdi mdi-brightness-7"></i><span>Settings</span>
+    </a>
+    <i class="mdi mdi-chevron-down"></i>
+    <ul class="sub-menu collapse" id="collapseExample">
+        <li>
+            <a href="https://www.shipease.in/seller-settings_partner">
+            <i class="far fa-box-open"></i><span>Courier Preferences</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-warehouse">
+                <i class="far fa-warehouse-alt"></i><span>Warehouses</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-rules">
+                <i class="far fa-pencil-ruler"></i><span>Rules</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-sku">
+                <i class="far fa-clone"></i><span>SKU</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/shipping_rates">
+                <i class="mdi mdi-cash-multiple"></i> <span>Shipping Rates</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/seller-rate-calculator">
+                <i class="mdi mdi-calculator-variant"></i> <span>Rate Calculator</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/seller_api_key">
+                <i class="mdi mdi-xml"></i> <span>Rest APIs</span>
+            </a>
+        </li>
+    </ul>
+</li> -->
+
+
+<li>
+    <a href="https://www.shipease.in/seller-settings_partner" class="">
+        <i class="fas fa-tools" style="font-size: 18px;"></i><span>Tools</span>
+    </a>
+    <ul class="sub-menu">
+        <li>
+            <a href="https://www.shipease.in/seller-settings_partner" class="">
+            <i class="far fa-box-open"></i><span>Courier Preferences</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-warehouse" class="">
+                <i class="far fa-warehouse-alt"></i><span>Warehouses</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-rules" class="">
+                <i class="far fa-pencil-ruler"></i><span>Rules</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/my-sku" class="">
+                <i class="far fa-clone"></i><span>SKU</span>
+            </a>
+        </li>
+                <li>
+            <a href="https://www.shipease.in/shipping_rates" class="">
+                <i class="mdi mdi-cash-multiple"></i> <span>Shipping Rates</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/seller-rate-calculator" class="">
+            <i class="far fa-calculator"></i> <span>Rate Calculator</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/customise-label" class="">
+                <i class="far fa-clone"></i> <span>Customize Label</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.shipease.in/seller_api_key" class="">
+                <i class="far fa-code"></i> <span>Rest APIs</span>
+            </a>
+        </li>
+
+                <!-- <li>
+            <a href="https://www.shipease.in/serviceable_pincode" class="">
+                <i class="far fa-map-marker-alt"></i> <span>Serviceable Pincode</span>
+            </a>
+        </li> -->
+    </ul>
+</li>
+<li>
+    <a href="https://www.shipease.in/mis_report" class="">
+        <i class="mdi mdi-mailbox-open-up-outline"></i> <span>MIS</span>
+        <ul class="sub-menu">
+            <li>
+                <a href="https://www.shipease.in/mis_report" class="">
+                    <i class="far fa-box-open"></i><span>Reports</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.shipease.in/seller/report-status" class="">
+                    <i class="far fa-download"></i><span>Downloads</span>
+                </a>
+            </li>
+            <!--<li>-->
+            <!--    <a href="https://www.shipease.in/pickup-reports" class="">-->
+            <!--        <i class="far fa-download"></i><span>Pickups</span>-->
+            <!--    </a>-->
+            <!--</li>-->
+        </ul>
+    </a>
+</li>
+<li>
+    <a href="https://www.shipease.in/customer_support" class="">
+        <i class="mdi mdi-face-agent"></i> <span>Customer Support</span>
+    </a>
+</li>
+            <!-- <li>
+                <a href="#">
+                    <i class="mdi mdi-page-layout-header-footer"></i> <span>Layouts</span>
+                </a>
+                <ul class="sub-menu">
+                    <li><a href="#"><i class="mdi mdi-page-layout-header-footer"></i> <span>Order</span></a></li>
+                    <li><a href="#"><i class="mdi mdi-page-layout-header-footer"></i> <span>Order</span></a></li>
+                    <li><a href="#"><i class="mdi mdi-page-layout-header-footer"></i> <span>Order</span></a></li>
+                    <li><a href="#"><i class="mdi mdi-page-layout-header-footer"></i> <span>Order</span></a></li>
+                </ul>
+            </li> -->
+        </ul>
+    </div>
+</aside>
+
+    <div class="content-wrapper">
+        <div class="content-inner">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="h4 mb-4">Customer KYC</h3>
+                    <!-- MultiStep Form -->
+                    <!-- Circles which indicates the steps of the form: -->
+                    <div class="mb-4">
+                        <span class="step" id="step1">Basic Information</span>
+                        <span class="step" id="step2">Account Information</span>
+                        <span class="step" id="step3">KYC Information</span>
+                        <span class="step" id="step4">Agreement</span>
+                    </div>
+                        <!-- One "tab" for each step in the form: -->
+                    <div class="tab" id="basic_information">
+                        <form id="basic_form" method="post" enctype="multipart/form-data" action="https://www.shipease.in/basic-information">
+                            <input type="hidden" name="_token" value="pldnfmLMSb4Tij9bESnAQwwt6s9krZS1uXjLma9t">                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="company_name">Company Name</label>
+                                        <input type="text" class="form-control" placeholder="Company Name" id="company_name" name="company_name" required value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" class="form-control" placeholder="Email" id="email" name="email" value="rajeevyash24@gmail.com" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="website">Website URL</label>
+                                        <input type="url" class="form-control" placeholder="Website URL" id="website" name="website" value="www">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="country">Mobile Number</label>
+                                        <div class="input-group ship-form-group">
+                                            <div class="input-group-prepend">
+                                                <select class="form-control" id="country" name="country" required>
+                                                    <option value="+91">+91</option>
+                                                    <option value="+91">+07</option>
+                                                    <option value="+01">+01</option>
+                                                </select>
+                                            </div>
+                                            <input type="number" class="form-control" placeholder="Phone Number" id="mobile" name="mobile" value="" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="gst_number">GST Number</label>
+                                        <input type="text" class="form-control" placeholder="GST Number" id="gst_number" name="gst_number" value="07AAGFF2194N1Z1" maxlength="15" minlength="15">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="gst_certificate">Please Upload Your GST Certificate</label>
+                                        <input type="file" class="form-control" id="gst_certificate" name="gst_certificate" accept="application/pdf,image/*">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="logo">Choose Company Logo</label>
+                                        <input type="file" class="form-control" id="logo" name="logo" accept="image/*">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="pan_number">Enter Your PAN Number</label>
+                                        <input type="text" minlength="10" maxlength="10" class="form-control" placeholder="PAN Number" id="pan_number" name="pan_number" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="street">Enter Street Name</label>
+                                        <input type="text" class="form-control" placeholder="Street" id="street" name="street" required value="India">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="pincode">Enter Zip Code</label>
+                                        <input type="text" class="form-control" placeholder="PIN Code" id="pincode" name="pincode" maxlength="6" required value="462001">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="city">City Name</label>
+                                        <input type="text" class="form-control" placeholder="City" id="city" name="city" required value="BHOPAL">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="state">State Name</label>
+                                        <input type="text" class="form-control" placeholder="State" id="state" name="state" required value="MADHYA PRADESH">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab" id="account_information">
+                        <form id="account_form" method="post" enctype="multipart/form-data" action="https://www.shipease.in/account-information">
+                            <input type="hidden" name="_token" value="pldnfmLMSb4Tij9bESnAQwwt6s9krZS1uXjLma9t">                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="account_holder_name">Account Holder Name</label>
+                                        <input type="text" class="form-control" placeholder="Account Holder Name" id="account_holder_name" name="account_holder_name" value="39238765008">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="account_number">Account Number</label>
+                                        <input type="text" class="form-control" placeholder="Account Number" id="account_number" name="account_number" value="39238765008">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="ifsc_code">IFSC Code</label>
+                                        <input type="text" class="form-control" placeholder="IFSC Code" id="ifsc_code" name="ifsc_code" value="SBIN0001308">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="bank_name">Bank Name</label>
+                                        <input type="text" class="form-control" placeholder="Bank Name" id="bank_name" name="bank_name" value="State Bank of India">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="bank_branch">Branch Name</label>
+                                        <input type="text" class="form-control" placeholder="Branch Name" id="bank_branch" name="bank_branch" value="BHOPAL">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="cheque_image">Please Upload Cheque Image</label>
+                                        <input type="file" class="form-control" id="cheque_image" name="cheque_image" accept="application/pdf,image/*" >
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab" id="kyc_information">
+                        <form id="kyc_form" method="post" enctype="multipart/form-data" action="https://www.shipease.in/kyc-information">
+                            <input type="hidden" name="_token" value="pldnfmLMSb4Tij9bESnAQwwt6s9krZS1uXjLma9t">                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="company_type">Company Type</label>
+                                        <select type="text" class="form-control" id="company_type" name="company_type" required>
+                                            <option value="">Select Document Type</option>
+                                            <option value="Proprietorship" selected>Proprietorship</option>
+                                            <option value="Private" >Private</option>
+                                            <option value="Partnership Firm" >Partnership Firm</option>
+                                            <option value="Other" >Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="document_type">Document Type</label>
+                                        <select type="text" class="form-control" id="document_type" name="document_type" required>
+                                            <option value="">Select Document Type</option>
+                                            <option value="aadhar_card" selected>Aadhar Card</option>
+                                            <option value="pan_card" >Pan Card</option>
+                                            <option value="driving_license" >Driving License</option>
+                                            <option value="voter_id" >Voter ID Card</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="document_upload">Upload Document</label>
+                                        <input type="file" class="form-control" id="document_upload" name="document_upload" accept="application/pdf,image/*" >
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="document_name">Document Name</label>
+                                        <input type="text" class="form-control" id="document_name" name="document_name" placeholder="Document Name" value="Adhar" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="document_id">Document Number</label>
+                                        <input type="text" class="form-control" id="document_id" name="document_id" placeholder="Document Number" value="430302604445" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab" id="agreement">
+                        <form id="agreement_form" method="post" enctype="multipart/form-data" action="https://www.shipease.in/agreement-information">
+                            <input type="hidden" name="_token" value="pldnfmLMSb4Tij9bESnAQwwt6s9krZS1uXjLma9t">                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="document_upload">Upload Agreement</label>
+                                        <input type="file" class="form-control" id="document_upload" name="document_upload" accept="application/pdf,image/*">
+                                        <a download="" href="https://www.shipease.in/public/assets/admin/images/20231020152523AGR.pdf">Download Agreement</a>
+                                    </div>
+                                    <div class="form-group">
+                                        <span id="terms1">
+                                            <input type="checkbox" name="accept" id="accept" value="yes" required> <span class="acceptTerms">I agree and accept the terms & conditions</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="document_upload">Upload Guide</label>
+                                        <ul>
+                                            <li>Please download the agreement</li>
+                                            <li>Make a signature on the agreement</li>
+                                            <li>Scan the copy of agreement</li>
+                                            <li>Upload the scanned agreement here</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div style="overflow:auto;">
+                        <div style="float:right;">
+                            <button type="button" class="btn btn-dark" id="prevBtn" onclick="nextPrev(-1)">Back</button>
+                            <button type="button" class="btn btn-primary" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                            <!-- <button type="button" class="btn btn-dark" id="prevBtn" onclick="nextPrev(-1)">Back</button>
+                            <button type="button" class="btn btn-primary" id="nextBtn" onclick="nextPrev(1)">Next</button> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><img src="https://www.shipease.in/public/assets/admin/images/20201210182316FAV.png" style="height:30px;width:30px;"> &nbsp;Recharge</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="mt-3" method="post" action="https://www.shipease.in/confirm-payment">
+                    <input type="hidden" name="_token" value="pldnfmLMSb4Tij9bESnAQwwt6s9krZS1uXjLma9t">                    <div class="row">
+                        <div class="col-md-7 mt-2">
+                            <div class="form-group mb-2 ml-2">
+                                <label for="">Your Balance</label> :
+                                <label for="" class="text-info" style="font-weight: bolder;"><i class="fa fa-inr"></i> 0.00</label>
+                            </div>
+                            <div class="form-group mb-2 ml-2">
+                                <label for="">COD Balance</label> :
+                                <label for=""><i class="fa fa-inr"></i> 0</label>
+                            </div>
+                        </div>
+                        <div class="col-md-5 mx-0" style="display:none;">
+                        <h6 class="text-center font-weight-bold">Scan & Recharge</h6>
+                            <img class="ml-3" src="https://www.shipease.in/public/assets/admin/images/20220119155213QRCode.rtf" style="height: 150px;width: 150px;" alt="SHIPEASE TECHNOLOGIES PRIVATE LIMITED">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rechargeAmount">Recharge Amount</label>
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control" id="rechargeAmount" name="amount" min="0" placeholder="Enter Recharge Amount" />
+                        </div>
+                    </div>
+                    <label>Select Denomination</label><br>
+                    <button type="button" class="btn btn-outline-primary recharge_amount mb-1" data-value="1000">₹1000</button>
+                    <button type="button" class="btn btn-outline-primary recharge_amount mb-1" data-value="1500">₹1500</button>
+                    <button type="button" class="btn btn-outline-primary recharge_amount mb-1" data-value="2000">₹2000</button>
+                    <button type="button" class="btn btn-outline-primary recharge_amount mb-1" data-value="5000">₹5000</button>
+                    <!-- <div class="form-group">
+                        <label for="promoCode">Have A Promo Code?</label>
+                        <input type="text" id="promoCode" class="form-control" placeholder="Enter it Here">
+                        <small><a href="#">Apply</a></small>
+                    </div> -->
+                    <div class="form-group">
+                        <label for="promoCode">Have A Redeem Code?</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="promoCode" placeholder="Enter it Here">
+                            <div class="input-group-append">
+                                <a href="#" id="redeemButton" class="btn btn-secondary">Redeem Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" id="makeRechargeButton" class="btn btn-sm btn-primary mb-2">Recharge</button>
+                    <button type="button" id="makeNEFTRechargeButton" class="btn btn-sm btn-primary mb-2">Recharge using NEFT</button>
+                    <button type="button" id="makeRemitRecharge" class="btn btn-sm btn-primary mb-2">Recharge Via COD</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="neftModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Recharge using NEFT</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Please transfer amount in below account and enter details here.</p>
+                <p style="font-weight: bold;">
+                    Account Holder : SHIPEASE TECHNOLOGIES PRIVATE LIMITED <bR>
+                    Account Number : 165105002442<bR>
+                    IFSC Code : ICIC0001651
+                </p>
+                <form class="mt-3" method="post" action="https://www.shipease.in/confirm-payment" id="neftForm">
+                    <input type="hidden" name="_token" value="pldnfmLMSb4Tij9bESnAQwwt6s9krZS1uXjLma9t">                    <div class="form-group">
+                        <label for="">Your Balance</label> :
+                        <label for=""><i class="fa fa-inr"></i> 0.00</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="rechargeAmount">UTR Number</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="utrNumber" name="utrNumber" placeholder="Enter UTR Number"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="rechargeAmount">Transaction Amount</label>
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control" id="rechargeNEFTAmount" name="amount" min="0" placeholder="Enter Transaction Amount" />
+                        </div>
+                    </div>
+                    <button type="button" id="makeNEFTRechargeSubmitButton" class="btn btn-primary">Recharge</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://www.shipease.in/public/assets/seller/js/popper.min.js"></script>
+<script src="https://www.shipease.in/public/assets/seller/js/bootstrap.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
+-->
+<script src="https://www.shipease.in/public/assets/seller/js/sweetalert.js"></script>
+<script src="https://www.shipease.in/public/assets/seller/js/jquery.form.min.js"></script>
+<script src="https://www.shipease.in/public/assets/seller/js/loadingoverlay.min.js"></script>
+
+<script src="https://www.shipease.in/public/assets/seller/js/notify.js"></script>
+<script src="https://www.shipease.in/public/assets/seller/js/prettify.js"></script>
+
+<script src="https://www.shipease.in/public/assets/seller/js/myScript.js"></script>
+<script src="https://www.shipease.in/public/assets/seller/js/custom.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js" integrity="sha512-6Uv+497AWTmj/6V14BsQioPrm3kgwmK9HYIyWP+vClykX52b0zrDGP7lajZoIY1nNlX4oQuh7zsGjmF7D0VZYA==" crossorigin="anonymous"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+
+    $("body").tooltip({selector: '[data-toggle=tooltip]', delay: {show: 700}});
+    var cod_balance=0;
+    
+        $('#notificationButton').click(function(){
+            setTimeout(function(){
+                $('#NotificationModal').collapse('hide');
+            }, 3000);
+        });
+
+
+    $(document).ready(function () {
+
+        $('[data-toggle="popover"]').popover();
+
+        $('.recharge_amount').click(function () {
+            var that=$(this);
+            $('#rechargeAmount').val(that.data('value'));
+        });
+        $('#makeNEFTRechargeButton').click(function () {
+            $('#exampleModal').modal('hide');
+            $('#neftModal').modal('show');
+        });
+        $('#makeRemitRecharge').click(function () {
+            $.notify(' COD recharges are temporary not available please use other recharge options',{blur: 0.2, delay: 0,verticalAlign:'top', align:'right', type: 'danger', icon:'close'});
+            return false;
+            var amount=$('#rechargeAmount');
+            if(parseInt(amount.val()) <= 0 || amount.val() === ''){
+                alert('Enter valid recharge amount');
+                amount.focus();
+                return false;
+            }
+            if(parseInt(amount.val()) > cod_balance){
+                alert('Amount can not be greater than COD Balance');
+                amount.focus();
+                return false;
+            }
+            showOverlay();
+            $.ajax({
+                type : 'post',
+                data : {
+                    'amount' : amount.val(),
+                    '_token' : 'pldnfmLMSb4Tij9bESnAQwwt6s9krZS1uXjLma9t'
+                },
+                url : 'https://www.shipease.in/remit-cod',
+                success : function (response) {
+                    hideOverlay();
+                    let info=JSON.parse(response);
+                    if(info.status==='false')
+                        $.notify(info.message,{blur: 0.2, delay: 0,verticalAlign:'top', align:'right', type: 'danger', icon:'close'});
+                    else{
+                        Swal.fire({
+                            title: 'Are you sure?',
+                            text: "Your Rechargeable Amount Is : " + info.recharge,
+                            icon: 'success',
+                            showCancelButton: true,
+                            confirmButtonColor: '#3085d6',
+                            cancelButtonColor: '#d33',
+                            confirmButtonText: 'Yes, proccess it!'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                showOverlay();
+                                $.ajax({
+                                    type : 'post',
+                                    data : {
+                                        'amount' : amount.val(),
+                                        '_token' : 'pldnfmLMSb4Tij9bESnAQwwt6s9krZS1uXjLma9t'
+                                    },
+                                    url : 'https://www.shipease.in/submit-cod-remit-recharge',
+                                    success : function (reponse) {
+                                        hideOverlay();
+                                        Swal.fire(
+                                            'Success!',
+                                            'Recharge is successful.',
+                                            'success'
+                                        )
+                                        setTimeout(function () {
+                                            location.reload();
+                                        },1000)
+                                    },
+                                    error: function (response) {
+                                        hideOverlay();
+                                        $.notify("Something went wrong please try again later",{blur: 0.2, delay: 0,verticalAlign:'top', align:'right', type: 'danger', icon:'close'});
+                                    }
+                                });
+                            }
+                        })
+                         //alert("Your rechargeable amount is : " + info.recharge);
+                         // $.notify(' COD remitted successfully',{blur: 0.2, delay: 0,verticalAlign:'top', align:'right', type: 'success', icon:'check'});
+                         // setTimeout(function () {
+                         //     location.reload();
+                         // },1000);
+                    }
+                },
+                error : function (response) {
+                    hideOverlay();
+                    $.notify("Something went wrong please try again later",{blur: 0.2, delay: 0,verticalAlign:'top', align:'right', type: 'danger', icon:'close'});
+                }
+            });
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+        });
+        $('#redeemButton').click(function () {
+            var promo=$('#promoCode');
+            if(promo.val().trim()===''){
+                alert('Please enter promo code to redeem');
+                promo.focus();
+                return false;
+            }
+            showOverlay();
+            $.ajax({
+                type : 'post',
+                data : {
+                    '_token' : 'pldnfmLMSb4Tij9bESnAQwwt6s9krZS1uXjLma9t',
+                    'code' : promo.val()
+                },
+                url : 'https://www.shipease.in/apply-promo',
+                success : function (response) {
+                    hideOverlay();
+                    let info=JSON.parse(response);
+                    if(info.status==='true')
+                    {
+                        $.notify('Redemption Successful amount credited to your wallet',{blur: 0.2, delay: 0,verticalAlign:'top', align:'right', type: 'success', icon:'check'});
+                    }else{
+                        $.notify(info.message,{blur: 0.2, delay: 0,verticalAlign:'top', align:'right', type: 'danger', icon:'close'});
+                    }
+                },
+                error  :function (response) {
+                    $.notify('Something went wrong please check again',{blur: 0.2, delay: 0,verticalAlign:'top', align:'right', type: 'danger', icon:'close'});
+                }
+            });
+        });
+        $('#makeRechargeButton').click(function () {
+            // $.notify(' Recharge Feature available Soon.',{blur: 0.2, delay: 0,verticalAlign:'top', align:'right', type: 'danger', icon:'close'});
+            // return false;
+            var amount=$('#rechargeAmount');
+            if(parseInt(amount.val()) <= 0 || amount.val() === ''){
+                alert('Enter valid recharge amount');
+                amount.focus();
+                return false;
+            }
+            if(parseInt(amount.val()) < 1000){
+                alert('Minimum recharge amount is 1000');
+                return false;
+            }
+            $.ajax({
+                type : 'post',
+                data : {
+                    'amount' : amount.val() * 100,
+                    '_token' : 'pldnfmLMSb4Tij9bESnAQwwt6s9krZS1uXjLma9t'
+                },
+                url : 'https://www.shipease.in/create-recharge_order',
+                success : function (response) {
+                    var info=JSON.parse(response);
+                    if(info.status === 'true'){
+                        generate_payment(amount.val() * 100,info.order_id);
+                    }
+                },
+                error : function(response){
+                    alert('Payment Gateway under maintenance please try after some time..');
+                }
+            });
+        });
+        setInterval(function () {
+            checkForNotification();
+        },15000);
+    });
+    $('#makeNEFTRechargeSubmitButton').click(function () {
+        $('input[name="utrNumber"]').valid();
+        var amount=$('#rechargeNEFTAmount'),utr=$('#utrNumber');
+        if(parseInt(amount.val()) <= 0 || amount.val() === ''){
+            alert('Enter valid recharge amount');
+            amount.focus();
+            return false;
+        }
+        if(parseInt(amount.val()) < 1000){
+                alert('Minimum recharge amount is 1000');
+                return false;
+            }
+        $.ajax({
+            type : 'post',
+            data : {
+                'amount' : amount.val(),
+                'utr' : utr.val().trim(),
+                '_token' : 'pldnfmLMSb4Tij9bESnAQwwt6s9krZS1uXjLma9t'
+            },
+            url : 'https://www.shipease.in/create-neft-recharge',
+            success : function (response) {
+                var info=JSON.parse(response);
+                if(info.status === 'true'){
+                    $('#neftModal').modal('hide');
+                    $.notify(' Details has been sent to admin.Amount will be credited to your wallet once approved',{blur: 0.2, delay: 0,verticalAlign:'top', align:'right', type: 'success', icon:'check'});
+                }
+            }
+        });
+    });
+    function generate_payment(amount,orderId) {
+        var options = {
+            "key": "rzp_live_nsloxwCyPnjC76", // Enter the Key ID generated from the Dashboard
+            "amount": amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+            "currency": "INR",
+            "image" : "https://www.shipease.in/public/assets/admin/images/20201210182316FAV.png",
+            "name": "ShipEase Technologies Pvt Ltd",
+            "description": "Wallet Recharge",
+            "order_id": orderId, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+            "callback_url": "https://www.shipease.in/payment-success",
+            "prefill": {
+                "name": "",
+                "email": "rajeevyash24@gmail.com",
+                "contact": ""
+            },
+            "notes": {
+                "address": "Razorpay Corporate Office"
+            },
+            "theme" : {
+                "color" : "#528ff0"
+            }
+        };
+        var rzp1 = new Razorpay(options);
+        rzp1.open();
+    }
+
+    //For Loading Overlay hide or Show
+    function showOverlay() {
+        $.LoadingOverlay("show", {
+            image       : "https://www.shipease.in/public/assets/1.png",
+            imageAutoResize : true,
+            imageResizeFactor : 1
+        });
+    }
+    function hideOverlay() {
+        $.LoadingOverlay('hide');
+    }
+    function showSuccess(message) {
+        $.notify(" "+message, {blur: 0.2, delay: 0,verticalAlign:'top', align:'right', type: 'success', icon:'check'});
+    }
+    function showError(message) {
+        $.notify(" "+message, {blur: 0.2, delay: 0,verticalAlign:'top', align:'right', type: 'danger', icon:'close'});
+    }
+    $(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+
+    $('#neftForm').validate({
+            rules: {
+                utrNumber: {
+                    required: true
+                },
+                amount: {
+                    required: true
+                },
+            },
+            messages: {
+                utrNumber: {
+                    required: "Please Enter UTR Number",
+                },
+                amount: {
+                    required: "Please Enter Amount",
+                },
+            },
+            errorElement: 'span',
+            errorPlacement: function (error, element) {
+                error.addClass('invalid-feedback');
+                element.closest('.form-group').append(error);
+            },
+            highlight: function (element, errorClass, validClass) {
+                $(element).addClass('is-invalid');
+            },
+            unhighlight: function (element, errorClass, validClass) {
+                $(element).removeClass('is-invalid');
+            }
+        });
+    function checkForNotification() {
+        $.ajax({
+            type : 'get',
+            url : 'https://www.shipease.in/seller/check-shipped-order-notification',
+            success : function (response) {
+                if(response.status){
+                    for(let i=0; i<=response.data.length; i++){
+                        let current = response.data[i];
+                        $.notify(response.notification,{blur: 0.2, delay: 0,verticalAlign:'top', align:'right', type: 'success', icon:'check'});
+                    }
+                }
+
+            }
+
+        });
+    }
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(document).on('keypress','#mobile',function(e){
+            if($(e.target).prop('value').length>=10){
+            if(e.keyCode!=32)
+            {return false}
+        }})
+
+        $(document).on('keypress','#pincode',function(e){
+            if($(e.target).prop('value').length>=6){
+            if(e.keyCode!=32)
+            {return false}
+        }})
+
+        $('#pan_number').keypress(function (e) {
+        var regex = new RegExp("^[a-zA-Z0-9]+$");
+        var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+        if (regex.test(str)) {
+            return true;
+        }
+        e.preventDefault();
+        return false;
+        });
+
+        $('#account_holder_name').keypress(function (e) {
+        var regex = new RegExp("^[a-zA-Z0-9\ ]+$");
+        var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+        if (regex.test(str)) {
+            return true;
+        }
+        e.preventDefault();
+        return false;
+        });
+
+        $('#account_number').keypress(function (e) {
+        var regex = new RegExp("^[0-9]+$");
+        var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+        if (regex.test(str)) {
+            return true;
+        }
+        e.preventDefault();
+        return false;
+        });
+
+        $('#document_name').keypress(function (e) {
+        var regex = new RegExp("^[a-zA-Z\ ]+$");
+        var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+        if (regex.test(str)) {
+            return true;
+        }
+        e.preventDefault();
+        return false;
+        });
+
+        $('#document_id').keypress(function (e) {
+        var regex = new RegExp("^[0-9A-Za-z]+$");
+        var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+        if (regex.test(str)) {
+            return true;
+        }
+        e.preventDefault();
+        return false;
+        });
+
+        $('#pincode').blur(function () {
+            var that=$(this);
+            if(that.val().trim().length===6){
+                that.removeClass('invalid');
+                showOverlay();
+                $.ajax({
+                    type : 'get',
+                    url : 'https://www.shipease.in' + '/pincode-detail/' + that.val(),
+                    success : function (response) {
+                        hideOverlay();
+                        var info=JSON.parse(response);
+                        if(info.status=="Success"){
+                            $('#city').val(info.city);
+                            $('#state').val(info.state);
+                        }else{
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'Invalid Pincode'
+                            });
+                            that.val('');
+                        }
+                    },
+                    error : function (response) {
+                        hideOverlay();
+                    }
+                });
+            }
+            else{
+                that.addClass('invalid');
+            }
+        });
+        $('#ifsc_code').blur(function () {
+            var that=$(this);
+            if(that.val().trim().length===11){
+                that.removeClass('invalid');
+                showOverlay();
+                $.ajax({
+                    type : 'get',
+                    url : 'https://www.shipease.in' + '/ifsc-detail/' + that.val(),
+                    success : function (response) {
+                        hideOverlay();
+                        var info=JSON.parse(response);
+                        if(info.status=="false"){
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'Invalid IFSC Code'
+                            });
+                            //that.val('');
+                        }else{
+                            $('#bank_name').val(info.BANK);
+                            $('#bank_branch').val(info.BRANCH);
+                        }
+                    },
+                    error : function (response) {
+                        hideOverlay();
+                    }
+                });
+            }
+            else{
+                that.addClass('invalid');
+            }
+        });
+    });
+</script>
+</body>
+</html>
